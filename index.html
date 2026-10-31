@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelvin Muriuki | Web Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main Stylesheet - THIS WAS THE BUG (missing ") -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header and navigation-->
+    <header class="navbar-header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">Kelvin<span>.dev</span></a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <span class="badge">Welcome to my portfolio</span>
+            <h1>Kelvin Muriuki</h1>
+            <h2>Web Developer</h2>
+            <p class="hero-description">
+                I create modern, responsive, and user-friendly websites and
+                web applications with clean code and intuitive design.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-briefcase"></i> View my work</a>
+                <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Contact me</a>
+                <a href="#" class="btn btn-outline"><i class="fa-solid fa-download"></i> Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Hello! I am Kelvin, a passionate Web Developer dedicated to crafting clean,
+                        responsive, and intuitive web applications. I enjoy turning complex challenges into seamless, 
+                        accessible digital experiences.
+                    </p>
+                    <p>
+                        My journey in web development is driven by continuous learning and a strong desire to stay
+                        current with modern frameworks, tools, and industry standards.
+                    </p>
+
+                    <div class="qualities-grid">
+                        <div class="quality-card">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <div>
+                                <h3>Problem Solving</h3>
+                                <p>Analyzing complex issues systematically to build practical, efficient solutions.</p>
+                            </div>
+                        </div>
+                        <div class="quality-card">
+                            <i class="fa-solid fa-palette"></i>
+                            <div>
+                                <h3>Creativity</h3>
+                                <p>Designing engaging interfaces with attention to visual hierarchy and user experience.</p>
+                            </div>    
+                        </div>                
+                        <div class="quality-card">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <h3>Continuous Learning</h3>
+                                <p>Constantly expanding my knowledge base with modern tools and emerging web standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="profile-box">
+                        <div class="avatar-wrapper">
+                            <i class="fa-solid fa-code avatar-icon"></i>                        
+                        </div>
+                        <div class="profile-badge">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Available For Hire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section-->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">Technologies and tools I work with regularly</p>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5 skill-icon html-color"></i>
+                    <h3>HTML</h3>
+                    <p>HTML5 and Semantic Structures</p>                    
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt skill-icon css-color"></i>
+                    <h3>CSS</h3>
+                    <p>CSS3, Flexbox and Grid Layouts</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-js skill-icon js-color"></i>
+                    <h3>Javascript</h3>
+                    <p>ES6+ and Dynamic Web Apps</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-bootstrap skill-icon bootstrap-color"></i>
+                    <h3>Bootstrap</h3>
+                    <p>Responsive Frameworks</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-git-alt skill-icon git-color"></i>
+                    <h3>Git</h3>
+                    <p>Version Control Management</p>
+                </div>
+                 <div class="skill-card">
+                    <i class="fa-brands fa-github skill-icon github-color"></i>
+                    <h3>Github</h3>
+                    <p>Collaborative and Code Hosting</p>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section-->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">A showcase of recent work and web development applications</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fa-solid fa-laptop-code project-preview-icon"></i>                       
+                    </div>
+                    <div class="project-body">
+                        <h3>Personal Portfolio</h3>
+                        <p>A responsive personal portfolio website showcasing your skills and projects with a modern layout and smooth navigation.</p>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Flexbox</span>
+                        </div>
+                        <a href="#" class="btn btn-card">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fa-solid fa-user-graduate project-preview-icon"></i>                       
+                    </div>
+                    <div class="project-body">
+                        <h3>Student Management System</h3>
+                        <p>A web application system designed to manage students information, academic records, and course details seamlessly.</p>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="btn btn-card">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fa-solid fa-wallet project-preview-icon"></i>                       
+                    </div>
+                    <div class="project-body">
+                        <h3>Budgeting Application</h3>
+                        <p>An interactive application designed to help users manage personal finances, set spending targets, and track expenses.</p>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="btn btn-card">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Have a question or want to work together? Send me a message!</p>
+            <div class="contact-wrapper">
+                <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent.');">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Kelvin Muriuki. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/kelvinchomba585-alt" target="_blank" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kelvin-chomba-80b218393" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:kelvinchomba585@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+     </footer>
+
+</body>
+</html>
